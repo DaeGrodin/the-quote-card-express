@@ -1,0 +1,66 @@
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4d0a3b;
+  background: linear-gradient(273deg,rgba(77, 10, 59, 1) 0%, rgba(58, 17, 77, 1) 100%);
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  padding: 3rem;
+  border: 1px solid white;
+  color: white;
+  text-align: center
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/mitchell-luo-GmN13w9bg8w-unsplash.jpg") center/cover 
+}
+
+.quote-container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quote-text {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: heavy;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.author-text {
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .main {
+    padding: 2rem;
+  }
+
+  .quote-text {
+    font-size: 1.25rem;
+  }
+
+  .quote-container::before,
+  .quote-container::after {
+    font-size: 2rem;
+  }
+}
