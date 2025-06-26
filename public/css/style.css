@@ -29,7 +29,7 @@ body, html {
 }
 
 .quote-container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   position: relative;
 }
@@ -47,6 +47,16 @@ body, html {
   font-style: italic;
   letter-spacing: 1px;
   color: #e0e0e0;
+}
+
+.quote-container::before {
+  top:  10px;
+  left: 20px;
+}
+
+.quote-container::after {
+  bottom: 30px;
+  right: 20px;
 }
 
 /* Responsive */
