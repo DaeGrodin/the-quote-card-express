@@ -1,0 +1,29 @@
+[33mcommit feed5d945efafdb250f2bb27ab344c0ddcf0c102[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dae Grodin <daejavu@gmail.com>
+Date:   Fri Jun 27 10:50:19 2025 -0400
+
+    remove access key
+
+[33mcommit 6d2f0e83e229869c93287514a0b04d049dfa5d3d[m
+Author: Dae Grodin <daejavu@gmail.com>
+Date:   Fri Jun 27 01:46:55 2025 -0400
+
+    updated index.js
+
+[33mcommit afc07b198a819fde4190fe9a07ecbfa9be7f2187[m
+Author: Dae Grodin <daejavu@gmail.com>
+Date:   Thu Jun 26 02:46:08 2025 -0400
+
+    changed a few lines og style
+
+[33mcommit 3c022af344b0c3fa474ab2737e20528bdd101237[m
+Author: Dae Grodin <daejavu@gmail.com>
+Date:   Thu Jun 26 02:32:07 2025 -0400
+
+    added style
+
+[33mcommit bd0a5a4046d9b93dc9ad2e944dae718ba9661beb[m
+Author: Dae Grodin <daejavu@gmail.com>
+Date:   Mon Jun 23 23:15:27 2025 -0400
+
+    express set up to serve a single page.
