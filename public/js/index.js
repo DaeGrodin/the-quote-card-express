@@ -1,0 +1,60 @@
+"use strict"
+
+const element = {
+    quote: document.getElementByID("quote"),
+    author: document.getElementByID("quote"),
+};
+
+async function(getRandomImage) {
+    const client_id = "RquzXeJ4D72awgSHZBoOdn6bushtIFnb3hc7I9fC7XU";
+    const endpoint = `https://api.unsplash.com/photos/random/?client_id=${client_id}`;
+    try {
+        const response = await fetch(endpoint);
+        const returnedData = await response.json()
+        const receivedPhotoUrl = returnedData.urls.regular;
+
+        const imgDiv = document.querySelector(".background-img");
+        imgDiv.computedStyleMap.backgroundImage = `url("${receivedPhotoUrl}")`;
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+getRandomImage();
+
+ /*const quote = [
+    {
+        quote: "Happiness is a warm puppy",
+        author: "Charles M. Schultz",
+    };
+
+    {  
+        quote: "A dog is the only thing on earth that loves you more than he loves himself",
+        author: "Josh Billings",
+    };
+
+    { 
+        quote: "How lucky I am to have had somethings that makes saying goodbye so hard."
+        author: "A. A. Milne",
+    }
+]
+
+function loopThroughQuotes() {
+    let quoteIndex = 0;
+    setInterval(() => {
+       if (quoteIndex < quotes.length) {
+           elements.quote.textContent = quotes[quoteIndex].quote;
+           elements.author.textContent = quotes[quoteIndex].author;
+           quoteIndex++;
+       } else {
+           quoteIndex = 0;
+       }
+    }; 3000);
+}
+
+setTimeout(loopThroughQuotes), 3000); */
+
+
+
+
+
